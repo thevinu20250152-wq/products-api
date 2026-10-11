@@ -14,22 +14,44 @@ package uk.ac.westminster.products_api;
  *   JavaBean convention: provide a getter called getEmail().
  */
 public class Person {
-
     private String name;
+    private int age;
+    private String email; // Added email field
 
+    // Default Constructor
     public Person() {
     }
 
-    public Person(String name) {
+    // All-args Constructor
+    public Person(String name, int age, String email) {
         this.name = name;
+        this.age = age;
+        this.email = email;
     }
 
+    // Getters and Setters
     public String getName() {
         return name;
     }
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     // TODO (Activity 3): add the "email" field and its getter here.
